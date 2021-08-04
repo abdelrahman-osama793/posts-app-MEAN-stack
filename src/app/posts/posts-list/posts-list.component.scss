@@ -1,0 +1,28 @@
+mat-accordion {
+  display: block;
+  margin-top: 2rem;
+}
+
+.notFound--text {
+  text-align: center;
+  margin-top: 5rem;
+  color: blueviolet;
+  font-size: 2rem;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+.post__image {
+  margin: auto;
+  width: 50%;
+  img {
+    width: 100%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+  }
+}
+
+mat-paginator {
+  margin-top: 2rem;
+}

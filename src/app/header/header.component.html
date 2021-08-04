@@ -1,0 +1,29 @@
+<mat-toolbar color="primary" class="navbar">
+  <span>
+    <a routerLink="/"> Mean Stack </a>
+  </span>
+
+  <ul>
+    <li *ngIf="isUserAuthenticated">
+      <a mat-button routerLink="create" routerLinkActive="mat-accent">
+        Create Note
+      </a>
+    </li>
+
+    <li *ngIf="isUserAuthenticated">
+      <a mat-button routerLink="notes"> Notes List </a>
+    </li>
+
+    <li *ngIf="!isUserAuthenticated">
+      <a mat-button routerLink="/login"> Login </a>
+    </li>
+
+    <li *ngIf="!isUserAuthenticated">
+      <a mat-button routerLink="/signUp"> Sign Up </a>
+    </li>
+
+    <li *ngIf="isUserAuthenticated">
+      <button mat-button (click)="onLogout()">Logout</button>
+    </li>
+  </ul>
+</mat-toolbar>
